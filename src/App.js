@@ -9,12 +9,12 @@ import SocialLinks from "./components/SocialLinks";
 import useReady from "./components/useReady";
 
 function App() {
-  const {ready} = useReady(4000);
+  const {ready} = useReady(3800);
   return (
-    <>
+    <div>
   {
     ready!==true?<LoadingPage/>:
-    <div>
+    <div >
     <NavBar />
     <Home />
     <About />
@@ -24,7 +24,7 @@ function App() {
     <SocialLinks />
     </div>
   }
-  </>
+  </div>
     );
 }
 
